@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "prem1_backend": {
+      "main": "src/prem1_backend/main.mo",
+      "type": "motoko"
+    },
+    "prem1_frontend": {
+      "dependencies": [
+        "prem1_backend"
+      ],
+      "source": [
+        "src/prem1_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "prem1_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
